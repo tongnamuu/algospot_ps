@@ -1,5 +1,4 @@
 #include <iostream>
-#include <memory.h>
 using namespace std;
 int n;
 int a[101][101];
@@ -12,7 +11,7 @@ int go(int x, int y) {
 	if (!range(x, y)) return 0;
 	if (d[x][y] != -1) return d[x][y];
 	if (x == n - 1 && y == n - 1) return 1;
-	return d[x][y] = go(x + a[x][y], y) | go(x, y + a[x][y]);
+	return d[x][y] = go(x + a[x][y], y) || go(x, y + a[x][y]);
 }
 int main() {
 	ios_base::sync_with_stdio(false), cin.tie(0), cout.tie(0);
