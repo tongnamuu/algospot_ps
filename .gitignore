@@ -3,3 +3,24 @@
 ################################################################################
 
 *.user
+*.filters
+*.vcxproj
+*.sln
+/QUADTREE/Debug
+/QUADTREE/.vs/QUADTREE/v15/ipch/AutoPCH/be3a2d819ce73320
+*.suo
+/QUADTREE/.vs/QUADTREE/v15
+*.pdb
+*.obj
+*.ilk
+*.tlog
+*.db
+*.exe
+*.json
+*.ipch
+*.sqlite
+*.log
+*.idb
+*.ipdb
+*.iobj
+*.opendb
