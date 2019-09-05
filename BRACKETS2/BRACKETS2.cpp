@@ -21,21 +21,21 @@ int main() {
 			}
 			else {
 				if (a[i] == ')') {
-					if (top() != '(') {
+					if (empty() || top() != '(') {
 						ans = false;
 						break;
 					}
 					pop();
 				}
 				else if (a[i] == '}') {
-					if (top() != '{') {
+					if (empty() || top() != '{') {
 						ans = false;
 						break;
 					}
 					pop();
 				}
 				else if (a[i] == ']') {
-					if (top() != '[') {
+					if (empty() || top() != '[') {
 						ans = false;
 						break;
 					}
