@@ -22,7 +22,7 @@ int lca(int u, int v) {
 	if (u == v) return u;
 	else {
 		for (int i = log; i >= 0; --i) {
-			if (parent[u][i] != 0 && parent[u][i] != parent[v][i]) {
+			if (parent[u][i] != -1 && parent[u][i] != parent[v][i]) {
 				u = parent[u][i];
 				v = parent[v][i];
 			}
